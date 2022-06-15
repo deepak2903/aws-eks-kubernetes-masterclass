@@ -87,7 +87,7 @@ Observation:
 1. No k8s Service accounts as of now. 
 
 # Configure kubeconfig for kubectl
-cat /user-home-path/.kube/config # view the content of kubeconfig
+cat /user-home-path/.kube/config # It is the kubectl configuration file , which stores all the information about EKS cluster.
 eksctl get cluster # TO GET CLUSTER NAME
 aws eks --region <region-code> update-kubeconfig --name <cluster_name>
 aws eks --region us-east-1 update-kubeconfig --name eksdemo1
