@@ -86,7 +86,7 @@ kubectl describe sa external-dns
 Observation: 
 1. Verify the Annotations and you should see the IAM Role is present on the Service Account
 ```
-### Step-03-03: Verify CloudFormation Stack
+### Step-03-03: Verify IAM Role through CloudFormation Stack
 - Go to Services -> CloudFormation
 - Verify the latest CFN Stack created.
 - Click on **Resources** tab
