@@ -115,6 +115,7 @@ kubectl logs -f $(kubectl get po | egrep -o 'external-dns[A-Za-z0-9-]+')
 nslookup default101.stacksimplify.com
 nslookup app101.stacksimplify.com
 nslookup app201.stacksimplify.com
+nslookup <ingress-ALB>
 ```
 ### Positive Case: Access Application using DNS domain
 ```t
