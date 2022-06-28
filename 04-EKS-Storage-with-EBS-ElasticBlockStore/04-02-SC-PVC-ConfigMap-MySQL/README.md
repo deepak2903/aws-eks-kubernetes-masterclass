@@ -14,7 +14,7 @@
 ## Step-02: Create following Kubernetes manifests
 ### Create Storage Class manifest
 - https://kubernetes.io/docs/concepts/storage/storage-classes/#volume-binding-mode
-- **Important Note:** `WaitForFirstConsumer` mode will delay the volume binding and provisioning  of a PersistentVolume until a Pod using the PersistentVolumeClaim is created. 
+- **Important Note:** `WaitForFirstConsumer` mode will delay the volume binding and provisioning  of a PersistentVolume until a Pod using the PersistentVolumeClaim is created. Because of this , the pod & volume will be created in same AZ. Incase if we dont specify this parameter , the pod & volume MIGHT get created in 2 different AZ.
 
 ### Create Persistent Volume Claims manifest
 ```
