@@ -46,7 +46,8 @@ kubectl apply -f kube-manifests/
 # List Pods
 kubectl get pods -n dev3 -w
 
-# View Pod Specification (CPU & Memory)
+# View mysql & UMS Pod Specification (CPU & Memory)
+kubectl get pods -n dev3
 kubectl get pod <pod-name> -o yaml -n dev3
 
 # Get & Describe Limits
