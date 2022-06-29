@@ -34,8 +34,9 @@ kubectl describe pod <usermgmt-microservice-xxxxxx>
 # Access Application Health Status Page
 http://<WorkerNode-Public-IP>:31231/usermgmt/health-status
 
-# List Nodes & Describe Node
+# List Nodes & Describe Node, on which pod is running
 kubectl get nodes
+kubectl get po -o wide
 kubectl describe node <Node-Name>
 ```
 ## Step-04: Clean-Up
