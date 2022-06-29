@@ -8,5 +8,4 @@
  kubectl get ns
 
 # What all the objects "kube-system" namespace have.
- kubectl get all --namespace kube-system
- kubectl get all -n kube-system
+ kubectl get all --namespace kube-system OR kubectl get all -n kube-system
