@@ -53,6 +53,9 @@ kubectl apply -f kube-manifests/
 # List Pods
 kubectl get pods
 
+# verify DB Password is encrypted correctly in UMS & Service is UP successfully.
+kubectl logs -f <UMS-podname>
+
 # Access Application Health Status Page
 http://<WorkerNode-Public-IP>:31231/usermgmt/health-status
 ```
