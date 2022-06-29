@@ -101,7 +101,7 @@ kubectl get sc,pv
 kubectl delete sc ebs-sc
 
 # Get all from All Namespaces
-kubectl get all -all-namespaces
+kubectl get all --all-namespaces
 ```
 
 ## References:
