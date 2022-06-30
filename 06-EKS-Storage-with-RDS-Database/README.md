@@ -42,7 +42,7 @@
   - **Edition**: MySQL Community
   - **Version**: 5.7.22  (default populated)
   - **Template Size:** Free Tier
-  - **DB instance identifier:** usermgmtdb
+  - **DB instance identifier:** usermgmtdb  # we can specify any name
   - **Master Username:** dbadmin
   - **Master Password:** dbpassword11
   - **Confirm Password:** dbpassword11
