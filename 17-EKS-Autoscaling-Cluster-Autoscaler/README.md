@@ -59,6 +59,10 @@ kubectl -n kube-system edit deployment.apps/cluster-autoscaler
         - --skip-nodes-with-system-pods=false
 ```
 
+```
+# List the cluster-autoscaler pods
+kubectl get pods -n kube-system
+```
 ## Step-05: Set the Cluster Autoscaler Image related to our current EKS Cluster version
 - Open https://github.com/kubernetes/autoscaler/releases
 - Find our release version (example: 1.16.n) and update the same. 
