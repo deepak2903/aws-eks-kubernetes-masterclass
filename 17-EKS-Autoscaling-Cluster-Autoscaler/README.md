@@ -21,6 +21,9 @@ kubectl apply -f https://raw.githubusercontent.com/kubernetes/autoscaler/master/
 
 # Add the cluster-autoscaler.kubernetes.io/safe-to-evict annotation to the deployment
 kubectl -n kube-system annotate deployment.apps/cluster-autoscaler cluster-autoscaler.kubernetes.io/safe-to-evict="false"
+
+# List the cluster-autoscaler pods
+kubectl get pods -n kube-system
 ```
 ## Step-04: Edit Cluster Autoscaler Deployment to add Cluster name and two more parameters
 ```
