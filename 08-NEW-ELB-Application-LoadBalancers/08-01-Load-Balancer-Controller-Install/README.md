@@ -383,7 +383,9 @@ kubectl -n kube-system logs -f <POD-NAME>
 kubectl -n kube-system logs -f aws-load-balancer-controller-86b598cbd6-vqqsk
 ```
 
-### Step-04-05: Verify AWS Load Balancer Controller k8s Service Account - Internals 
+### Step-04-05: Verify AWS Load Balancer Controller k8s Service Account - Internals
+To understand the communication between the EKS Cluster[AWS LB Controller deployment(pods)] & AWS Services [ALB] we require some 
+  authentication mechanism & that mechanism is described using this JWT token.
 ```t
 # List Service Account and its secret
 kubectl -n kube-system get sa aws-load-balancer-controller
