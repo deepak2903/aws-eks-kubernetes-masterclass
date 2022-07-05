@@ -132,7 +132,7 @@ http://<INGRESS-ADDRESS-FIELD>/app1/index.html
 http://app1ingress-154912460.us-east-1.elb.amazonaws.com
 http://app1ingress-154912460.us-east-1.elb.amazonaws.com/app1/index.html
 
-# Verify AWS Load Balancer Controller logs
+# Verify AWS Load Balancer Controller logs if by , any chance our ingress is not working
 kubectl get po -n kube-system 
 ## POD1 Logs: 
 kubectl -n kube-system logs -f <POD1-NAME>
