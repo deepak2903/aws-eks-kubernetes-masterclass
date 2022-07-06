@@ -78,7 +78,7 @@ kubectl get svc
     - **choose Region** - Select your ALB region
     - **choose LB** - Select your ALB DNS Name here (Sample: ssl-ingress-551932098.us-east-1.elb.amazonaws.com)
   - Click on **Create**
-- verify the DNS & ALB-DNS by nslookup , both should resolved to same ipy
+- verify the custom DNS & ALB-DNS by nslookup , both should resolved to same ipy
   - nslookup ssldemo101.stacksimplify.com
   - nslookup ssl-ingress-551932098.us-east-1.elb.amazonaws.com
   
