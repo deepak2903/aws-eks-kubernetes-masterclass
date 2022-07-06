@@ -29,8 +29,12 @@ description: Learn AWS Load Balancer Controller - Ingress SSL
   - Select a Validation Method: **DNS Validation**
   - Click on **Confirm & Request**    
 - **Validation**
-  - Click on **Create record in Route 53**  
-- Wait for 5 to 10 minutes and check the **Validation Status**  
+  - Select the respective certificate
+  - Under **Domains** , Click on **Create record in Route 53**  & select **Create records**
+- Wait for 5 to 10 minutes and check the **Validation Status**
+  - Note down the CNAME value.
+- verify the DNS Validation
+  - Route53---->Hosted Zones---->Stacksimplify.com--->search for the CNAME record
 
 ## Step-04: Add annotations related to SSL
 - **04-ALB-Ingress-SSL.yml**
