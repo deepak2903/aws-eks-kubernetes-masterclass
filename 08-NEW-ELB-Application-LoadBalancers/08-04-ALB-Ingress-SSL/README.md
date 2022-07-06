@@ -72,8 +72,11 @@ kubectl get svc
   - Click on **yourdomain.com** (in my case stacksimplify.com)
 - Create a **Record Set**
   - **Name:** ssldemo101.stacksimplify.com
+  - **Record type:** A-Routes traffic to an IPV4 address & so..
   - **Alias:** yes
-  - **Alias Target:** Copy our ALB DNS Name here (Sample: ssl-ingress-551932098.us-east-1.elb.amazonaws.com)
+    - **choose endpoint** - Alias to ALB & CLB
+    - **choose Region** - Select your ALB region
+    - **choose LB** - Select your ALB DNS Name here (Sample: ssl-ingress-551932098.us-east-1.elb.amazonaws.com)
   - Click on **Create**
   
 ## Step-07: Access Application using newly registered DNS Name
