@@ -1,6 +1,6 @@
 # EKS Storage with EBS - Elastic Block Store
 
-## Step-01: Introduction
+## Step-01: Introduction - prerequisite
 - Create IAM Policy for EBS
 - Associate IAM Policy to Worker Node IAM Role
 - Install EBS CSI Driver
