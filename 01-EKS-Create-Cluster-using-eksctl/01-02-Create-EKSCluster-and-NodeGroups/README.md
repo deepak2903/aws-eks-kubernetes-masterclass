@@ -19,7 +19,9 @@
 eksctl create cluster --name=eksdemo1 \
                       --region=us-east-1 \
                       --zones=us-east-1a,us-east-1b \
-                      --without-nodegroup 
+                      --without-nodegroup
+
+Mumbai: eksctl create cluster --name ashokit-cluster4 --region ap-south-1 --node-type t2.medium --zones ap-south-1a,ap-south-1b --without-nodegroup
 
 # Get List of clusters
 eksctl get cluster                  
